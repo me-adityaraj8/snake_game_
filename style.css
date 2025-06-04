@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url('bg.png') no-repeat center center fixed;
+    background-size: cover;
+    background-color: #000;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', monospace;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vmin;
+    gap: 1rem;
+}
+
+#scoreContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#scoreBox, #hiscoreBox {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    border: 1px solid white;
+    min-width: 120px;
+    text-align: center;
+}
+
+#board {
+    background: linear-gradient(#000d19, #000, #000c19);
+    width: 100%;
+    aspect-ratio: 1/1; /* Makes the board square */
+    border: 5px solid rgb(16, 31, 67);
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head {
+    background: linear-gradient(rgb(6, 170, 173), rgb(114, 4, 173));
+    border: 2px solid rgb(34, 4, 34); 
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+
+.snake {
+    background-color: rgb(121, 17, 177);
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.food {
+    background: linear-gradient(red, purple);
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
