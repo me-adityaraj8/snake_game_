@@ -22,5 +22,5 @@ A classic **Snake Game** built using **HTML, CSS, and JavaScript**. Control the 
 
 ---
 
-## 📂 Project Structure
+
 
