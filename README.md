@@ -10,7 +10,7 @@ A classic **Snake Game** built using **HTML, CSS, and JavaScript**. Control the 
 - Food generation at random positions  
 - Score tracking  
 - Game over detection on collision  
-- Responsive layout (works on both desktop & mobile)
+- Responsive layout 
 
 ---
 
